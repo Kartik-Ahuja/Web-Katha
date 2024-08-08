@@ -1,0 +1,39 @@
+.ContactSection{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.ContactSection-container{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ContactSection-container-left{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    margin-bottom: 20px;
+}
+
+.ContactSection-container-left-contact{
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon{
+    background-color: #FF6100;
+    color: black;
+    padding: 15px 20px 6px 20px;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 10px 20px;
+}
+
+.details-title{
+    font-weight: 600;
+}

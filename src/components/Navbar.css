@@ -5,13 +5,17 @@
     justify-content: space-between;
     align-items: center;
     height: 12vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: white;
 }
 
 .Logo{
     width: 115px;
     height: 54px;
     padding: 1.2vw 5vw;
-
+  cursor: pointer;
 }
 
 .Nav-item-parent{
@@ -26,7 +30,7 @@
     color: #192942;
     text-align: center;
     /* margin: 0px 30px; */
-    font-weight: 500;
+    font-weight: 700;
 
     &:hover{
         color: #FF6100;

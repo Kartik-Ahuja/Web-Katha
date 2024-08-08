@@ -1,5 +1,5 @@
 .Hero{
-   height: 88vh;
+   height: 100vh;
    width: 100%;
    background-image: url(../Images/Hero\ images/mountains.webp); 
    background-size: cover;
@@ -11,9 +11,9 @@
 
 .highway{
     height: 200px;
-    width: 500%;
+    width: 800%;
     display: block;
-    background-image: url(../Images/Hero\ images/road.jpg);
+    background-image: url(../Images/Hero\ images/road.webp);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -30,9 +30,9 @@
 
 
 .city{
-    height: 250px;
+    height: 300px;
     width: 500%;
-    background-image: url(../Images/Hero\ images/city.png);
+    background-image: url(../Images/Hero\ images/tree.webp);
     position: absolute;
     bottom: 200px;
     left: 0;
@@ -104,5 +104,277 @@
 @keyframes wheel {
     100%{
         transform: rotate(360deg);
+    }
+}
+
+.Cloud{
+    height: 250px;
+    position: absolute;
+    right: 0;
+    animation: cloud 15s linear infinite;
+    
+}
+
+@keyframes cloud {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.Bitmoji{
+  display: flex;
+  justify-content: center;
+}
+
+.Bitmoji img{
+   position: absolute;
+   bottom: 1px;
+    width: 270px;
+    z-index: 1;
+    animation: bitmoji 5s linear infinite;
+}
+
+@keyframes bitmoji {
+    100%{
+        transform: translateY(-1px);
+        display: none;
+    }
+    50%{
+        transform: translateY(1px);
+        display: none;
+    }
+    0%{
+        transform: translateY(-1px);
+        display: block;
+    }
+}
+
+
+
+@media all and (max-width: 600px) {
+    .Cloud{
+        top: 50px;
+    }  
+
+    .car{
+        width: 300px;
+        bottom: 130px;
+       
+        
+    }
+
+    .wheel{
+        bottom: 195px;
+
+    }
+    
+    .wheel img{
+        width: 55px;
+        height: 55px;
+
+    }
+    
+    .back-wheel{
+        left: -125px;
+    }
+    .front-wheel{
+        left: 60px;
+    }
+    
+    
+}
+
+.problem{
+    width: 250px;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    z-index: 1;
+}
+
+.problem-child-1{
+    background-color: #FF6100;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    
+
+}
+.problem-child-2{
+    background-color: rgba(245, 240, 240, 0.751);
+    border-radius:  0px 0px 20px 20px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+.solution{
+    width: 250px;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    z-index: 1;
+}
+
+.solution-child-1{
+    background-color: #FF6100;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+
+}
+.solution-child-2{
+    background-color: rgba(245, 240, 240, 0.751);
+    border-radius:  0px 0px 20px 20px;
+    text-align: center;
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+}
+
+
+@media all and (max-width:600px){
+    .problem{
+        width: 150px;
+        bottom: 40%;
+        left: 2%;
+    } 
+
+    .problem-child-2{
+          font-size: 10px;
+    }
+
+    .solution{
+        width: 150px;
+        bottom: 40%;
+        right: 2%;
+    } 
+
+    .solution-child-2{
+        font-size: 10px;
+    }
+}
+
+.Banner img {
+    height: 250px;
+}
+
+.Banner {
+    width: 100%;
+    position: absolute;
+    bottom: 191px;
+    z-index: 1;
+    animation: banner 20s linear infinite;
+}
+
+.banner1-text{
+    position: absolute;
+    bottom: 110px;
+    left: 55px;
+    width: 150px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+
+problem{
+    width: 80px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 2px;
+    border-radius: 20px;
+}
+
+@keyframes banner {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.Banner-2 {
+    width: 100%;
+    position: absolute;
+    bottom: 192px;
+    z-index: 1;
+    animation: banner2 20s linear infinite;
+}
+
+.Banner-2 img{
+    height: 250px;
+
+}
+
+@keyframes banner2 {
+    0% {
+        transform: translateX(160%);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}
+
+
+@media all and (max-width:600px){
+    .Banner-2 {
+        width: 100%;
+        position: absolute;
+        bottom: 180px;
+    }
+    
+    .Banner-2 img{
+        height: 150px;
+    
+    }
+    .Banner {
+        width: 100%;
+        position: absolute;
+        bottom: 180px;
+    }
+    
+    .Banner img{
+        height: 150px;
+    
+    }
+    
+    .banner1-text{
+        bottom: 61px;
+        left: 25px;
+        width: 110px;
+        text-align: center;
+        font-size: 8px;
+    line-height: 11.5px;
+   
+       
+    }
+    
+    problem{
+        width: 80px;
+        font-size: 10px;
+       
     }
 }

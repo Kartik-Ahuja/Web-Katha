@@ -1,0 +1,93 @@
+.infoStyle {
+  background: rgb(24, 23, 23);
+  color: white;
+  padding: 20px 0px;
+  margin-top: 150px;
+
+
+}
+
+.infoStyle>h2 {
+  border-top: 1px solid rgb(127, 126, 126);
+  padding-top: 30px;
+  text-align: center;
+}
+
+.bottom-logo-container{
+  width: 100px;
+  display: flex;
+  margin: auto;
+}
+
+.bottom-logo {
+  width: 100px;
+  /* position: relative; */
+  /* left: 44%; */
+}
+
+.phone {
+  letter-spacing: 1.1px;
+  text-align: left;
+}
+
+.Email {
+  letter-spacing: 1.1px;
+  text-align: left;
+}
+
+
+
+.Address {
+  letter-spacing: 1.1px;
+  width: 30%;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.cop {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.bottom-navbar {
+  display: flex;
+  justify-content: center;
+ gap: 10px;  
+
+}
+
+.navbar-item {
+  padding: 10px 10px 5px 10px;
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 50%;
+
+  &:hover {
+    color: #007bff;
+    border: 2px solid #007bff;
+    transition: all .4s ease;
+  }
+
+}
+
+
+.pnp{
+  color: rgb(149, 148, 148);
+  font-size: 0.8rem;
+  display: flex;
+  margin: auto;
+  width: 120px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.copyright{
+  color: rgb(149, 148, 148);
+  font-size: 0.8rem;
+  display: flex;
+  margin: auto;
+  width: 320px;
+  padding-top: 20px;
+  
+}

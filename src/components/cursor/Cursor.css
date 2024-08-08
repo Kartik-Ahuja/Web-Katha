@@ -1,0 +1,25 @@
+.smallcursor,
+.largecursor {
+  pointer-events: none; /* This property ensures that the cursor elements don't capture mouse events */
+  z-index: 1000; /* Adjust the z-index to be higher than other elements */
+}
+
+.smallcursor {
+  height: 10px;
+  width: 10px;
+  background: #ff6100;
+  border-radius: 50%;
+  position: absolute;
+  display: block; /* Set display to none by default */
+}
+
+.largecursor {
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+  display: block; /* Set display to none by default */
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
+}

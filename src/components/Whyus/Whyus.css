@@ -1,0 +1,93 @@
+span{
+    color: #FF6100;
+}
+
+h2{
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(204, 204, 204, 1);
+}
+
+
+  .Why-container{
+    margin:5vw 20vw;
+    width: 70vw;
+    height: 28vw;
+    display: flex;
+    
+}
+
+.Why-container1{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 20px;
+  }
+  .Why-container1::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.Why-container1::-webkit-scrollbar-track {
+    background-color: transparent; /* color of the track */
+}
+
+.Why-container1::-webkit-scrollbar-thumb {
+    background-color: #FF6100;
+    border-radius: 6px; /* roundness of the scroll thumb */
+}
+
+
+
+  .Why-container2 img{
+    height: 27vw;
+    
+  }
+  .Why-container p{
+    font-size: 1.2rem;
+  }
+
+  .Why-container h3{
+    font-size: 1.5rem;
+    /* display: inline;
+    position: relative;
+    bottom: 40px;
+    left: 10px; */
+  }
+
+  @media all and (max-width : 600px) {
+       .Why-container2 img{
+        height: 47vw;
+        
+      }
+      
+      .Why-container{
+        width: 80vw;
+        height: 47vw;
+    margin:5vw 15vw;
+                
+    }
+
+    .Why-container h3{
+         font-size: 0.9rem;
+         word-wrap: break-word;
+
+  }
+
+  .Why-container p{
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    
+}
+    
+  } 
+
+
+  .Why-container-child{
+          margin-bottom: 50px;
+  }
+ 
+  .child-image{
+    width: 6vw;
+    
+
+  }
